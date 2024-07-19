@@ -1,4 +1,4 @@
-role agg(M,SNAG,D:agent,MULADD:hash_func,SND,RCV:channel(dy))
+role agg(M,SN,AG,D:agent,MULADD:hash_func,SND,RCV:channel(dy))
 played_by AG
 def= 
   local
@@ -13,7 +13,7 @@ def=
         State':=1 ^ RCV(PK1.PK2.PID)
         ^RCV(Alpha.Betai.Msg.Ts)
         ^Beta':=Betai
-        ^Q':#H2(Beta'.Ts.Msg.PID.PK1.PK2.Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3.PIDd.PK1d.PK2d)
+        ^Q':=H2(Beta'.Ts.Msg.PID.PK1.PK2.Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3.PIDd.PK1d.PK2d)
         ^Gamma':=MUL(Alpha, ADD(PK2d, MUL(Q,PKId)))
         ^SND(Beta')
 end role
@@ -30,7 +30,7 @@ def=
     init
         State:=0
     transition
-        1. State = 0 ^ RCV(Eata.Aa.Bb.X.Oq.PKms.H1.H2.H3)=|>
+        1. State = 0 ^ RCV(Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)=|>
         State':=1 ^ Ld':= new() ^ Ad':= MUL(Ld,X)
         ^Cd':=MUL(Ld,PKms)
         ^Bd':=xor(IDd.UIDd.H1(Cd))
@@ -81,7 +81,7 @@ def=
         ^PIDd':=xor(H1(S.IDd.Tt'),UIDd)
         ^IDms':=new()
         ^Ed':=H1(IDd.UIDd)
-        ^Fd':=H1(IDms'.S.ID.Eata.Aa.Bb.X.Qq.PKms.HI.H2.H3)
+        ^Fd':=H1(IDms'.S.IDd.Eata.Aa.Bb.X.Qq.PKms.HI.H2.H3)
         ^Nd':= ADD(MUL(Ed,Fd),S)
         ^Rd':=MUL(Fd,X)
         ^SND(PIDd'.Nd'.Rd')
@@ -138,7 +138,7 @@ end role
 role environment()
 def=
         const m,sn,agg,d:agent, mul,add hash_func,
-        i,a,c,b,aa,bb,ld,ad,bd,cd,n,r,nd,rd:text,
+        l,a,c,b,aa,bb,ld,ad,bd,cd,n,r,nd,rd:text,
         keyid1,keyid2,keyid3,keyid4:protocol_id
         intruder_knowledge = (m,sn,agg,d,mul,add,l,a,c,b,aa,bb,ld,ad,bd,cd,n,r,nd,rd)
         composition
