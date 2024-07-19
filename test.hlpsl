@@ -18,92 +18,120 @@ def=
         ^SND(Beta')
 end role
 
-role doc(M,SNAG,D:agent,MULADD:hash func,SND, RCV:channel(dy)) played_by D
-dele
-local
-H1,H2,H3:hash func,
-IDd,UIDd, Ld Ad, Bd,Cd, X, PKms.Aa,Bb,Qq,Eata,N,R,Msg. PK1,PK2, PID,WId.,W2d,PK10,PK2d,PIOd,Hi,Nd,Rd,Q.Beta,Gamma,Ts.:text const keyid3, keyide,nz: protocol_id
-transition
-1. State m0 / RCV(Eata.Aa.Bb.X.Oq.PKms.H1.H2.H3)=[>
-State':=1 ALd' := new) /Ad'* : = MUL(Ld,X)
-ABd:wxorIDd.UIDd,H1(Cd))
-A SNDlAd.Ed'.UIDd.IDd)
-2. State =1 / ROV(PIDd'.Nd'.Rd') =|>
-State": =2 A PIDd*:#PID
-APKId:=MUL(WId,X)
-A SND PKId.PK20'.PIDd)
-Asecret((Wid').keyid3.{D))
-Asecrett(w2d').keyid4,{M))
-State':=3 A Q':=H2(Beta.Ts.Msg.PID.PK1.PK2.Eata.Aa.8b.X.0q.PKms.H1.H2.H3.PIDd.PK1d.PK2d)
-AHi:= H2(PID.8b.Beta.PK2.Ts)
-AGamma*: = MUL(ADD(W20,MUL(Q,W1d)) AOD(Beta,MUL(Hi,PK2),PKms))
-recuests Acnz cammal
+role doc(M,SN,AG,D:agent,MUL,ADD:hash_func,SND, RCV:channel(dy)) 
+played_by D
+def=
+    local
+        H1,H2,H3:hash func,
+        IDd,UIDd, Ld Ad, Bd,Cd, X, PKms.Aa,Bb,Qq,Eata,N,R,Msg. PK1,PK2, PID,WId.,W2d,PK10,PK2d,PIOd,Hi,Nd,Rd,Q.Beta,Gamma,Ts.:text const keyid3, keyide,nz: protocol_id
+    init
+        State:=0
+    transition
+        1. State m0 / RCV(Eata.Aa.Bb.X.Oq.PKms.H1.H2.H3)=[>
+        State':=1 ALd' := new) /Ad'* : = MUL(Ld,X)
+        ABd:wxorIDd.UIDd,H1(Cd))
+        A SNDlAd.Ed'.UIDd.IDd)
+        2. State =1 / ROV(PIDd'.Nd'.Rd') =|>
+        State": =2 A PIDd*:#PID
+        APKId:=MUL(WId,X)
+        A SND PKId.PK20'.PIDd)
+        Asecret((Wid').keyid3.{D))
+        Asecrett(w2d').keyid4,{M))
+        State':=3 A Q':=H2(Beta.Ts.Msg.PID.PK1.PK2.Eata.Aa.8b.X.0q.PKms.H1.H2.H3.PIDd.PK1d.PK2d)
+        AHi:= H2(PID.8b.Beta.PK2.Ts)
+        AGamma*: = MUL(ADD(W20,MUL(Q,W1d)) AOD(Beta,MUL(Hi,PK2),PKms))
+        recuests Acnz cammal
 end role
 
-fole ms(M,SN,AG,D:agent, MUL,ADD:hash_func,SND, RV:channel(dy)) played_by M defa local
-H1,H2,H3:hash_func, X,S,PKms,Aa,Bb,Qq.Eata,A,B,PID,ID,IDms,UID,E,F,N,
-R.PIDd.Nd.,Rd, Ed._Ad,Fd,Bd,UIDd, IDd, PPK,Tt:text const keyido:protocol id
-ШОПо!TOn
-1. State= 0 A RCV(start) =|> State: = 1
-APKmSSeMULSEX
-ASND({Eata.Aa.Bb.X.Oq.PKms.HI.H2.H3))
-2. State = 1 A RCV(A.B.UID.ID)=|> State: 2
-Auera news
-AF':= HI(Oms'.S.ID.Eata.Aa.Bb.X.Og.PKms.HI.H2.H3)
-AN':= ADD(MUL(E,F),S)
-AR': MUL(F,X)
-ASND(PID'.N'.R')
-3. State =2 A RCV(Ad°.Bd'.UIDd.IDd)=|> State*: # 3
-APIDd*:wxor(HI(S.IDd.Tt*),UIDd)
-AlDms' :=new()
-A Fd' := H1(IDms'.S.ID. Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)
-ANd':= ADD(MUL(Ed,Fd),S)
-ASND(PIDd*.Nd'.Rd*)
+role ms(M,SN,AG,D:agent, MUL,ADD:hash_func,SND, RV:channel(dy)) 
+played_by M 
+def=
+    local
+        H1,H2,H3:hash_func, X,S,PKms,Aa,Bb,Qq.Eata,A,B,PID,ID,IDms,UID,E,F,N,
+        R.PIDd.Nd.,Rd, Ed._Ad,Fd,Bd,UIDd, IDd, PPK,Tt:text const keyido:protocol id
+    init
+        State:=0
+    transition
+        1. State= 0 A RCV(start) =|> State: = 1
+        APKmSSeMULSEX
+        ASND({Eata.Aa.Bb.X.Oq.PKms.HI.H2.H3))
+        2. State = 1 A RCV(A.B.UID.ID)=|> State: 2
+        Auera news
+        AF':= HI(Oms'.S.ID.Eata.Aa.Bb.X.Og.PKms.HI.H2.H3)
+        AN':= ADD(MUL(E,F),S)
+        AR': MUL(F,X)
+        ASND(PID'.N'.R')
+        3. State =2 A RCV(Ad°.Bd'.UIDd.IDd)=|> State*: # 3
+        APIDd*:wxor(HI(S.IDd.Tt*),UIDd)
+        AlDms' :=new()
+        A Fd' := H1(IDms'.S.ID. Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)
+        ANd':= ADD(MUL(Ed,Fd),S)
+        ASND(PIDd*.Nd'.Rd*)
 end role
 
-role session(M:agent, SNagent AG:agent,D:agent, MULADO hash_func)
+role sn(M,SNAG,D:agent, MULADD:hash_furc, SND, RV:channel(dy)) 
+played_by SN
+def=
+    local
+        State:nat
+        H1.,H2,H3:hash func,
+        ID,UID,PID, L,A, B, X, PKms,Ad, Bb,Qq.Eata,C,N,R,PPK, 
+        WI,W2,PKI,PK2,Rr,Msg. Betai,Beta,Gamma,Alpha,E,Hi,Ts:text 
+        const keyid1.keyid2.keyids.nl: protocol id
+    init
+        State :=0
+    transition
+        1. Statew0 / RCV(Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)=[>State':=1
+        hurra new
+        MA':# MULL' X)
+        AC' := MUL(L'.PKms)
+        18° :=xOr(ID.UID,HI(C'))
+        A SND(A'.B'.UID.ID)
+        2. State =1 A RCV(PID'N'.R') =|>
+        State': =2 A WI*:=new)
+        W2:=newt
+        A PK1:=MUL(WI,X)
+        A Ts':=new()
+        ^ Betai*:= ADD(MUL(Rr, PK1),MUL(E,R))
+        A Hi: #H2(PID.Msg. Betai.PK2.Eata.Aa.Bb.X.Qq.PKms.HI.H2.H3.Ts)
+        Mipha*:# ADD(MUL(R,W1),MUL(HI,W2),N)
+        ASNO(PK1'.PK2'.PID)
+        A SND(Alpha'.Betai'.Msg.Ts')
+        Asecret((WI*).keyid1, (sn))
+        Asecret({Rr*).keyids,(sn})
+        A request(SN.AG,n1,Ts*)
 end role
-S1,S2,S3,54, R1,R2,R3,R4:channel(dy)
-composition
-MSM SHAGID MULADID SIEST
-Asn(M,SN,.AG,D,MULADD,S2,R2)
-/doc(M,SN,AG,D,MULADD,S3,R3)
-Nagg(M,SN,.AG,D,MULADD,S4,R4)
-const m,sn,agg.d: agent, mul,add hash_func,
+
+role session(M:agent, SN:agent AG:agent,D:agent, MUL,ADD:hash_func)
+def=
+    local
+        S1,S2,S3,S4,R1,R2,R3,R4:channel(dy)
+    composition
+        ms(M,SN,AG,D,MUL,ADD,S1,R1)
+        ^sn(M,SN,AG,D,MUL,ADD,S2,R2)
+        ^doc(M,SN,AG,D,MUL,ADD,S3,R3)
+        ^agg(M,SN,AG,D,MULADD,S4,R4)
+end role
+
+role environment()
+def=
+        const m,sn,agg,d:agent, mul,add hash_func,
+        i,a,c,b,aa,bb,ld,ad,bd,cd,n,r,nd,rd:text,
+        keyid1,keyid2,keyid3,keyid4:protocol_id
+        intruder_knowledge = (m,sn,agg,d,mul,add,l,a,c,b,aa,bb,ld,ad,bd,cd,n,r,nd,rd)
+        composition
+            session(m,sn,agg,d,mul,add) ^ session(m,sn,agg,d,mul,add)
+            ^ session(m,sn,agg,d,mul,add) ^ session(m,snagg,d,mul,add)
 end role
 goal
-intruder_knowledge = (m,sn,agg.d,mul,add.I,a.c.b.aa.bb,id.ad.bd,cd.n,r.nd.rd)
-session(m,sn,agg.d,mul,add) A session(m,sn,agg.d,mul,add)
-1 session(m,sn,agg.d,mul,add) session(m,snagg.d,mul,add)
-secrecy of keyido secrecy of keyid! secrecy of keyid2
-secrecy of keyid3 secrecy of keyids secrecy_of keyids authentication_on n authentication_on n2
-end goal
-environment
+        secrecy_of keyid0
+        secrecy_of keyid1
+        secrecy_of keyid2
+        secrecy_of keyid3
+        secrecy_of keyid4
+        secrecy_of keyid5
+        authentication_on n1 
+        authentication_on n2
 
-role sn(M,SNAG,D:agent, MULADD:hash_furc, SND, RV:channel(dy)) played_by SN
-local
-H1.,H2,H3:hash func,
-ID,UID,PID, L,A, B, X, PKms,Ad, Bb,Qq.Eata,C,N,R,PPK, WI,W2,PKI,PK2,Rr,Msg. Betai,Beta,Gamma,Alpha,E,Hi,Ts:text const keyid1.keyid2.keyids.nl: protocol id
-init
-State :# 0
-transition
-1. Statew0 / RCV(Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)=[>State':=1
-hurra new
-MA':# MULL' X)
-AC' := MUL(L'.PKms)
-18° :=xOr(ID.UID,HI(C'))
-A SND(A'.B'.UID.ID)
-2. State =1 A RCV(PID'N'.R') =|>
-State': =2 A WI*:=new)
-W2:=newt
-A PK1:=MUL(WI,X)
-A Ts':=new()
-^ Betai*:= ADD(MUL(Rr, PK1),MUL(E,R))
-A Hi: #H2(PID.Msg. Betai.PK2.Eata.Aa.Bb.X.Qq.PKms.HI.H2.H3.Ts)
-Mipha*:# ADD(MUL(R,W1),MUL(HI,W2),N)
-ASNO(PK1'.PK2'.PID)
-A SND(Alpha'.Betai'.Msg.Ts')
-Asecret((WI*).keyid1, (sn))
-Asecret({Rr*).keyids,(sn})
-A request(SN.AG,n1,Ts*)
-end role
+end goal
+environment()
