@@ -69,37 +69,41 @@ def=
         ASND(PIDd*.Nd'.Rd*)
 end role
 
-role sn(M,SNAG,D:agent, MULADD:hash_furc, SND, RV:channel(dy)) 
+role sn(M,SN,AG,D:agent, MULADD:hash_furc, SND, RV:channel(dy)) 
 played_by SN
 def=
     local
         State:nat
-        H1.,H2,H3:hash func,
-        ID,UID,PID, L,A, B, X, PKms,Ad, Bb,Qq.Eata,C,N,R,PPK, 
-        WI,W2,PKI,PK2,Rr,Msg. Betai,Beta,Gamma,Alpha,E,Hi,Ts:text 
-        const keyid1.keyid2.keyids.nl: protocol id
+        H1,H2,H3:hash_func,
+        ID,UID,PID,L,A,B,X,PKms,Aa,Bb,Qq,Eata,C,N,R,PPK, 
+        WI,W2,PKI,PK2,Rr,Msg,Betai,Beta,Gamma,Alpha,E,Hi,Ts:text 
+        const keyid1,keyid2,keyid5,nl:protocol_id
     init
         State :=0
     transition
-        1. Statew0 / RCV(Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3)=[>State':=1
-        hurra new
-        MA':# MULL' X)
-        AC' := MUL(L'.PKms)
-        18° :=xOr(ID.UID,HI(C'))
-        A SND(A'.B'.UID.ID)
-        2. State =1 A RCV(PID'N'.R') =|>
-        State': =2 A WI*:=new)
-        W2:=newt
-        A PK1:=MUL(WI,X)
-        A Ts':=new()
-        ^ Betai*:= ADD(MUL(Rr, PK1),MUL(E,R))
-        A Hi: #H2(PID.Msg. Betai.PK2.Eata.Aa.Bb.X.Qq.PKms.HI.H2.H3.Ts)
-        Mipha*:# ADD(MUL(R,W1),MUL(HI,W2),N)
-        ASNO(PK1'.PK2'.PID)
-        A SND(Alpha'.Betai'.Msg.Ts')
-        Asecret((WI*).keyid1, (sn))
-        Asecret({Rr*).keyids,(sn})
-        A request(SN.AG,n1,Ts*)
+        1. State=0 ^ RCV(Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3) =|> State':=1
+        ^L'=new()
+        ^A':=MUL(L',X)
+        ^C':= MUL(L',PKms)
+        ^B':=xor(ID.UID,H1(C'))
+        ^SND(A'.B'.UID.ID)
+        2. State =1^RCV(PID'.N'.R') =|>
+        State':=2^W1':=new()
+        ^W2':=new()
+        ^PK1':=MUL(W1,X)
+        ^PK2':=MUL(W2,X)
+        ^Rr':=new()
+        ^Ts':=new()
+        ^E':=H1(ID.UID)
+        ^Betai':= ADD(MUL(Rr, PK1),MUL(E,R))
+        ^Hi':=H2(PID.Msg.Betai.PK2.Eata.Aa.Bb.X.Qq.PKms.H1.H2.H3.Ts)
+        ^Alpha':=ADD(MUL(R,W1),MUL(Hi,W2),N)
+        ^SND(PK1'.PK2'.PID)
+        ^SND(Alpha'.Betai'.Msg.Ts')
+        ^secret((W1').keyid1, {sn})
+        ^secret((W2').keyid2, {sn})
+        ^secret({Rr').keyid5,{sn})
+        ^request(SN,AG,n1,Ts')
 end role
 
 role session(M:agent, SN:agent AG:agent,D:agent, MUL,ADD:hash_func)
